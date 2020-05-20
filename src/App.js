@@ -4,16 +4,17 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import './App.css'
+import NavbarCustom from './Components/Navbar/Navbar'
 
 class App extends Component {
   render() {
     return (
       <Container fluid className='App'>
-        <Row>
-          <Col>
-            <h1>Hello, world!</h1>
-          </Col>
-        </Row>
+        <Col>
+          <Row>
+            <NavbarCustom />
+          </Row>
+        </Col>
       </Container>
     )
   }
