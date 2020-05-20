@@ -14,6 +14,7 @@ const TweetContainer = props => {
       <Row>
         <Col>
           <div className='form-group col-md-6'>
+            <h6>Enter Ticker Symbol</h6>
             <input
               name='symbols'
               type='text'
