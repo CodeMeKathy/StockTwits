@@ -9,10 +9,9 @@ class NavbarCustom extends Component {
           <img
             alt='logo'
             loading='lazy'
-            src=''
-            width='30'
-            height='30'
+            src='https://github.com/CodeMeKathy/StockTwits/blob/master/src/assets/CMK-Logo.png?raw=true'
             className='d-inline-block align-top'
+            style={{ width: 30, height: 30, marginRight: '1rem' }}
           />
           StockTwits Dashboard
         </Navbar.Brand>
