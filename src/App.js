@@ -6,18 +6,16 @@ import Col from 'react-bootstrap/Col'
 import './App.css'
 import NavbarCustom from './Components/Navbar/Navbar'
 
-class App extends Component {
-  render() {
-    return (
-      <Container fluid className='App'>
-        <Col>
-          <Row>
-            <NavbarCustom />
-          </Row>
-        </Col>
-      </Container>
-    )
-  }
+const App = props => {
+  return (
+    <Container fluid className='App'>
+      <Col>
+        <Row>
+          <NavbarCustom />
+        </Row>
+      </Col>
+    </Container>
+  )
 }
 
 export default App
