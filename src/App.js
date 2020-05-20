@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
+import './App.css'
 
+// React Bootstrap Component Imports
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import './App.css'
+
+// Custom Components
 import NavbarCustom from './Components/Navbar/Navbar'
+import TweetContainer from './Components/TweetContainer/TweetContainer'
 
 const App = props => {
   return (
@@ -12,6 +16,7 @@ const App = props => {
       <Col>
         <Row>
           <NavbarCustom />
+          <TweetContainer />
         </Row>
       </Col>
     </Container>
