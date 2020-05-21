@@ -1,0 +1,10 @@
+/* Tweet Body Styling */
+li.tweet-body {
+  background-color: aliceblue;
+  height: auto;
+  list-style: none;
+}
+
+li.tweet-body div {
+  color: black;
+}
