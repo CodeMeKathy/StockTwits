@@ -1,10 +1,12 @@
 /* Tweet Body Styling */
 li.tweet-body {
-  background-color: aliceblue;
-  height: auto;
   list-style: none;
+  background-color: aliceblue;
 }
 
 li.tweet-body div {
   color: black;
+  margin: 1rem;
+  max-width: 75%;
+  height: auto;
 }
