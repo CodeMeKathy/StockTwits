@@ -17,23 +17,21 @@ const App = () => {
   const [symbolList, setSymbolList] = useState([])
   const [url, setUrl] = useState('')
 
-  // Handle user input on submit to fetch the symbol from the API
+  const fetchData = url => {
+    fetch(url)
+      .then(res => res.json())
+      .then(json => setSymbol(json))
+      .catch(err => console.error(err))
+  }
   useEffect(() => {
-    const fetchData = () => {
-      fetch(url)
-        .then(res => res.json())
-        .then(json => setSymbol(json))
-        .then(setSymbolList(symbolList => [...symbolList, symbol]))
-        .catch(err => console.error(err))
-    }
-    fetchData()
-  }, [url])
-
+    setSymbolList(symbolList => [...symbolList, symbol])
+  }, [symbol])
   // Handle user input on submit to fetch the symbol from the API
   const handleSubmit = event => {
     event.preventDefault()
     if (query !== undefined && query.trim().length > 0) {
       setUrl(`http://kl-test-server.herokuapp.com/?q=${query}`)
+      fetchData(`http://kl-test-server.herokuapp.com/?q=${query}`)
       setQuery('')
     }
   }
