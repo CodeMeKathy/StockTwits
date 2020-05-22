@@ -5,9 +5,8 @@ import './Symbol.css'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
-const Symbol = ({ symbol }) => (
+const Symbol = ({ symbol, removeSymbol }) => (
   <Col className='symList-container'>
-    {/* {console.log('symbol from Symbol', symbol)} */}
     {typeof symbol === 'object' && Object.keys(symbol).length > 0 ? (
       <div className='symbol-div'>
         <Row>
@@ -16,7 +15,11 @@ const Symbol = ({ symbol }) => (
             <h6 className='sym-title'>{symbol.symbol.title}</h6>
           </Col>
           <Col sm={2}>
-            <button type='submit' className='del-btn delete-x'>
+            <button
+              type='submit'
+              className='del-btn delete-x'
+              onClick={() => removeSymbol(symbol.symbol.title)}
+            >
               x
             </button>
           </Col>

@@ -7,7 +7,18 @@ import Row from 'react-bootstrap/Row'
 // Imported Components
 import Symbol from '../Symbol/Symbol'
 
-const SymbolContainer = ({ symbolList, handleSubmit, query, setQuery }) => {
+const SymbolContainer = ({
+  symbolList,
+  setSymbolList,
+  handleSubmit,
+  query,
+  setQuery
+}) => {
+  const removeSymbol = title => {
+    // https://dev.to/sanderdebr/creating-a-crud-app-in-react-with-hooks-3jml
+    setSymbolList(symbolList.filter(company => company.symbol.title !== title))
+  }
+
   return (
     <div>
       <Row className='sym-row'>
@@ -20,7 +31,7 @@ const SymbolContainer = ({ symbolList, handleSubmit, query, setQuery }) => {
               className='form-control'
               placeholder='GOOG, AAPL, SPOT'
               value={query}
-              onChange={event => setQuery(event.target.value)} // Store user input in state
+              onChange={event => setQuery(event.target.value)} // Store user input in state (via query)
             />
             <button type='submit' className='btn'>
               Get Tweet
@@ -32,7 +43,14 @@ const SymbolContainer = ({ symbolList, handleSubmit, query, setQuery }) => {
         {symbolList.length > 0
           ? symbolList.map(symbol => {
               console.log('symbol from SymbolContainer', symbol)
-              return <Symbol key={symbol.id} symbol={symbol} />
+              return (
+                <Symbol
+                  key={symbol.id}
+                  symbol={symbol}
+                  symbolList={symbolList}
+                  removeSymbol={removeSymbol}
+                />
+              )
             })
           : null}
       </Row>
