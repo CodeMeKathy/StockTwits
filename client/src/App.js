@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 
 // React Bootstrap Component Imports
@@ -18,16 +18,16 @@ const db = require('../../client/src/sample-data.json')
 const App = () => {
   const [query, setQuery] = useState('')
   const [symbol, setSymbol] = useState({})
-  const [symbolsList, setSymbolsList] = useState({})
+  const [symbolList, setSymbolList] = useState([])
 
-  // Find ticker symbol object in DB that matches user input
+  // Find ticker symbol object in DB that matches user input (via query variable)
   const findBySymbol = ticker => {
     const matchingSymbol = db.find(
       tickerSym =>
         ticker.toUpperCase() === tickerSym.symbol.symbol.toUpperCase()
     ) // Force same casing scheme for comparison
     setSymbol(matchingSymbol)
-    setSymbolsList(matchingSymbol)
+    setSymbolList(matchingSymbol)
   }
 
   // Handle user input on submit to fetch the symbol from the API
@@ -35,11 +35,6 @@ const App = () => {
     event.preventDefault()
     findBySymbol(query)
     setQuery('')
-  }
-
-  const handleDelete = event => {
-    event.preventDefault()
-    // TODO
   }
 
   return (
@@ -55,8 +50,8 @@ const App = () => {
             symbol={symbol}
             query={query}
             setQuery={setQuery}
-            symbolsList={symbolsList}
-            setSymbolsList={setSymbolsList}
+            symbolList={symbolList}
+            setSymbolList={setSymbolList}
             findBySymbol={findBySymbol}
             handleSubmit={handleSubmit}
           />

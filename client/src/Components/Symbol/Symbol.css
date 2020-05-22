@@ -1,0 +1,32 @@
+.symList-container {
+  margin-top: 1.5rem;
+}
+.sym-ticker,
+.sym-title {
+  color: #000033;
+}
+.symbol-div {
+  margin: 0 auto;
+  height: 4rem;
+  width: 13rem;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  font-weight: 600;
+  box-shadow: #6495ed;
+  -webkit-box-shadow: -7px 9px 5px 0px rgba(100, 149, 237, 0.31);
+  -moz-box-shadow: -7px 9px 5px 0px rgba(100, 149, 237, 0.31);
+  box-shadow: -7px 9px 5px 0px rgba(100, 149, 237, 0.31);
+}
+div.col-sm-10 {
+  padding-top: 0.3rem;
+  padding-right: 0;
+  padding-left: 2.2rem;
+}
+div.col-sm-2 {
+  padding-left: 0;
+  padding-right: 2.2rem;
+}
+.delete-x {
+  color: #077dfc;
+  font-family: 'Balsamiq Sans', cursive;
+}

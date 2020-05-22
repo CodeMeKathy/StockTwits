@@ -36,7 +36,7 @@ const TweetContainer = ({ symbol }) => {
               <div>
                 <h5 className='empty-title'>Tweet List Empty</h5>
                 <h5 className='empty-sub'>
-                  Add ticker symbol to see related tweets
+                  Add ticker symbol to load tweets
                 </h5>
               </div>
             )}

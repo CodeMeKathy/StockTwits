@@ -14,6 +14,26 @@
 
 ### 💪 Challenge
 
+Use React with and any available libraries to create a CRUD application that consumes the StockTwits API and displays tweets based on user input.
+
+- Allow user to input a US stock ticker symbol or several symbols (e.g., AAPL, BABA, BAC, etc…)
+
+- Consume tweets from StockTwits that mention the user-provided US stock ticker symbol and display the latest matching tweets.
+
+- Allow user to remove symbols with corresponding tweets.
+
+- Display the number of tweets for each user-provided symbol.
+
+- Fully responsive.
+
+- Consider user-interface and user-experience
+
+- Consider code structure, readability, and reusability.
+
+- Hosted code on GitHub.
+
+- Deploy to website.
+
 ### 💻 Tech Stack
 
 - _Frontend:_ [HTML](https://www.w3.org/TR/html52/), [CSS](https://www.w3.org/Style/CSS/), [React Bootstrap](https://react-bootstrap.github.io), [JavaScript](https://www.javascript.com/), [jQuery](https://jquery.com/)
@@ -22,7 +42,7 @@
 
 ## ⏳ Project Status
 
-This project is currently in development. Form functionality to add and delete items with the ability to edit records via the edit button is in progress.
+This project is currently in development.
 
 ## 🚀 Getting Started
 
@@ -35,20 +55,15 @@ This project uses [NodeJS](http://nodejs.org) and [NPM](https://npmjs.com). To c
 
 ### Dev Dependencies
 
-- [express](https://www.npmjs.com/package/express)
-- [nodemon](https://www.npmjs.com/package/nodemon)
-- [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)
+- [Express](https://www.npmjs.com/package/express)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
+- [Http-Proxy-Middleware](https://github.com/chimurai/http-proxy-middleware)
+- [CORS](https://www.npmjs.com/package/cors)
 
 ### 💾 Installation
 
 1. In desired location, run in the terminal `git clone https://github.com/CodeMeKathy/StockTwits.git` to clone the project repository to the local machine.
 2. In the terminal `cd` into `StockTwits/client` and `StockTwits/backend` and run `npm install` respectively to ensure all required developer dependencies are installed to successfully run this project locally.
-
-## 💎 Features
-
-### Frontend
-
-### Backend
 
 ## 🛠️ Technologies Used
 
