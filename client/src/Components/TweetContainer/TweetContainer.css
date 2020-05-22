@@ -10,6 +10,7 @@ button.btn:hover {
   background-color: whitesmoke;
   color: #160c28;
 }
+.tweet-div-title,
 .empty-title,
 .empty-sub {
   font-family: 'Balsamiq Sans', cursive;

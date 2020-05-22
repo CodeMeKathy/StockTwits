@@ -52,7 +52,7 @@ const App = () => {
         </Col>
       </Row>
       <Row className='main' style={{ marginTop: '5rem' }}>
-        <Col className='symbols-container'>
+        <Col className='symbols-container' sm={4}>
           <SymbolContainer
             symbol={symbol}
             query={query}
@@ -63,7 +63,7 @@ const App = () => {
             handleSubmit={handleSubmit}
           />
         </Col>
-        <Col className='tweet-container'>
+        <Col className='tweet-container' sm={8}>
           <TweetContainer symbol={symbol} />
         </Col>
       </Row>

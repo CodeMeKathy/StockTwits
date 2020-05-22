@@ -24,7 +24,7 @@ const SymbolContainer = ({
       <Row className='sym-row'>
         <div className='form-group col-md-6'>
           <form onSubmit={handleSubmit}>
-            <label>Enter Ticker Symbol</label>
+            <label className='sym-label'>Enter Ticker Symbol</label>
             <input
               name='symbols'
               type='text'

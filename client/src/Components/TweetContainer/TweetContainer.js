@@ -18,7 +18,9 @@ const TweetContainer = ({ symbol }) => {
             {/* If a ticker symbol has at least one object key then render the corresponding tweets */}
             {typeof symbol === 'object' && Object.keys(symbol).length > 0 ? (
               <>
-                <h3>{symbol.messages.length} Tweets</h3>
+                <h3 className='tweet-div-title'>
+                  {symbol.messages.length} '{symbol.symbol.title}' Tweets
+                </h3>
                 <ul>
                   {symbol.messages.map(message => {
                     return (
@@ -34,10 +36,8 @@ const TweetContainer = ({ symbol }) => {
               </>
             ) : (
               <div>
-                <h5 className='empty-title'>Tweet List Empty</h5>
-                <h5 className='empty-sub'>
-                  Add ticker symbol to load tweets
-                </h5>
+                <h4 className='empty-title'>Tweet List Empty</h4>
+                <h5 className='empty-sub'>Add ticker symbol to load tweets</h5>
               </div>
             )}
           </div>
