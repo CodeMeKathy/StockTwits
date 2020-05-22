@@ -15,7 +15,6 @@ const App = () => {
   const [query, setQuery] = useState('')
   const [symbol, setSymbol] = useState({})
   const [symbolList, setSymbolList] = useState([])
-  const [url, setUrl] = useState('')
 
   const fetchData = url => {
     fetch(url)
@@ -30,7 +29,6 @@ const App = () => {
   const handleSubmit = event => {
     event.preventDefault()
     if (query !== undefined && query.trim().length > 0) {
-      setUrl(`http://kl-test-server.herokuapp.com/?q=${query}`)
       fetchData(`http://kl-test-server.herokuapp.com/?q=${query}`)
       setQuery('')
     }
