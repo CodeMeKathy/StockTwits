@@ -29,7 +29,7 @@ const App = () => {
   const handleSubmit = event => {
     event.preventDefault()
     if (query !== undefined && query.trim().length > 0) {
-      fetchData(`http://kl-test-server.herokuapp.com/?q=${query}`)
+      fetchData(`https://kl-test-server.herokuapp.com/?q=${query}`)
       setQuery('')
     }
   }
