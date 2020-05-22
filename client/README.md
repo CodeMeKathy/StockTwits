@@ -1,68 +1,76 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <img src="" alt="" /> StickTwits Dashboard
+    <img src="" alt="" />
+</h1>
+<h4 align="center">
+ A web application dashboard that consumes StockTwits API data and displays recent stock related tweets.
+</h4>
 
-## Available Scripts
+<h5 align="center"> Live Site:
+  <a href="">https://stocktwits-dashboard-client.herokuapp.com</a>
+</h5>
 
-In the project directory, you can run:
+## Overview
 
-### `yarn start`
+### 💪 Challenge
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 💻 Tech Stack
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- _Frontend:_ [HTML](https://www.w3.org/TR/html52/), [CSS](https://www.w3.org/Style/CSS/), [React Bootstrap](https://react-bootstrap.github.io), [JavaScript](https://www.javascript.com/), [jQuery](https://jquery.com/)
+- _Backend:_ [NodeJS](https://nodejs.org/) with [Express](https://www.express.com/)
+- _Deployment:_ [Heroku Deployment](https://www.heroku.com/)
 
-### `yarn test`
+## ⏳ Project Status
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project is currently in development. Form functionality to add and delete items with the ability to edit records via the edit button is in progress.
 
-### `yarn build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites 📋
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+This project uses [NodeJS](http://nodejs.org) and [NPM](https://npmjs.com). To confirm if locally installed, enter into the terminal `node --version`, `npm --version`. If not locally installed, please the links below to conveniently access download instructions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Nodejs](https://nodejs.org/en/download/)
 
-### `yarn eject`
+### Dev Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!--?? TODO - Remove if not used for .env file -->
+<!--?? TOOD - Add to dev dependencies  -->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [express](https://www.npmjs.com/package/express)
+- [nodemon](https://www.npmjs.com/package/nodemon)
+- [fortawesome/fontawesome-svg-core](https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 💾 Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. In desired location, run in the terminal `git clone https://github.com/CodeMeKathy/StockTwits.git` to clone the project repository to the local machine.
+2. In the terminal `cd` into `StockTwits/client` and `StockTwits/backend` and run `npm install` respectively to ensure all required developer dependencies are installed to successfully run this project locally.
 
-## Learn More
+## 💎 Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Backend
 
-### Code Splitting
+## 🛠️ Technologies Used
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- [HTML](https://www.w3.org/TR/html52/)
+- [CSS](https://www.w3.org/Style/CSS/)
+- [Bootstrap](https://getbootstrap.com)
+- [JavaScript](https://www.javascript.com/)
+- [jQuery](https://jquery.com/)
+- [NodeJS](https://nodejs.org/)
+- [Express](https://www.express.com/)
+- [StockTwits API](https://api.stocktwits.com/developers)
+- [Heroku Deployment](https://www.heroku.com/)
 
-### Analyzing the Bundle Size
+## 👏👏 Acknowledgments
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Design inspiration created by [Harish](https://dribbble.com/shots/5504525-Dashboard-concept-UI) and available for free commercial use.
+- [StockTwits API](https://api.stocktwits.com/developers)
 
-### Making a Progressive Web App
+## 📄 License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The code in this project is licensed under the [MIT License](LICENSE.md) © 2020 Kathy Lambert.
