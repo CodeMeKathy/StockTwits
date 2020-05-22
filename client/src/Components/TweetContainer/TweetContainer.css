@@ -3,10 +3,10 @@ input.form-control {
 }
 button.btn {
   margin-top: 1rem;
-  background-color: #160c28;
+  background-color: #000033;
   color: whitesmoke;
 }
 button.btn:hover {
   background-color: whitesmoke;
-  color: #160c28;
+  color: #000033;
 }
