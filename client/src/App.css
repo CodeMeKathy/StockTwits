@@ -1,5 +1,6 @@
 * {
   color: aliceblue;
+  font-family: 'Lato', sans-serif;
 }
 
 .App {
@@ -7,7 +8,20 @@
 }
 
 .App {
-  height: 100vh;
+  height: 150vh;
+  /* width: 100%; */
   background-image: url('./assets/images/MainBackground.png');
   background-size: cover;
+}
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .main {
+    flex-direction: column;
+  }
+  .tweet-container {
+    margin-top: 1.5rem;
+  }
 }

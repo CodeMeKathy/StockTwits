@@ -3,10 +3,14 @@ input.form-control {
 }
 button.btn {
   margin-top: 1rem;
-  background-color: #000033;
+  background-color: #160c28;
   color: whitesmoke;
 }
 button.btn:hover {
   background-color: whitesmoke;
-  color: #000033;
+  color: #160c28;
+}
+.empty-title,
+.empty-sub {
+  font-family: 'Balsamiq Sans', cursive;
 }
