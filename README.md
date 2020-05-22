@@ -36,9 +36,9 @@ Use React with and any available libraries to create a CRUD application that con
 
 ### 💻 Tech Stack
 
-- _Frontend:_ [HTML](https://www.w3.org/TR/html52/), [CSS](https://www.w3.org/Style/CSS/), [React Bootstrap](https://react-bootstrap.github.io), [JavaScript](https://www.javascript.com/), [jQuery](https://jquery.com/)
+- _Frontend:_ [HTML](https://www.w3.org/TR/html52/), [CSS](https://www.w3.org/Style/CSS/), [React Bootstrap](https://react-bootstrap.github.io) and, [JavaScript](https://www.javascript.com/)
 - _Backend:_ [NodeJS](https://nodejs.org/) with [Express](https://www.express.com/)
-- _Deployment:_ [Heroku Deployment](https://www.heroku.com/)
+- _Deployment:_ [Heroku](https://www.heroku.com/)
 
 ## ⏳ Project Status
 
@@ -56,7 +56,6 @@ This project uses [NodeJS](http://nodejs.org) and [NPM](https://npmjs.com). To c
 ### Dev Dependencies
 
 - [Express](https://www.npmjs.com/package/express)
-- [Nodemon](https://www.npmjs.com/package/nodemon)
 - [Http-Proxy-Middleware](https://github.com/chimurai/http-proxy-middleware)
 - [CORS](https://www.npmjs.com/package/cors)
 
@@ -71,9 +70,10 @@ This project uses [NodeJS](http://nodejs.org) and [NPM](https://npmjs.com). To c
 - [CSS](https://www.w3.org/Style/CSS/)
 - [Bootstrap](https://getbootstrap.com)
 - [JavaScript](https://www.javascript.com/)
-- [jQuery](https://jquery.com/)
 - [NodeJS](https://nodejs.org/)
 - [Express](https://www.express.com/)
+- [Http-Proxy-Middleware](https://github.com/chimurai/http-proxy-middleware)
+- [CORS](https://www.npmjs.com/package/cors)
 - [StockTwits API](https://api.stocktwits.com/developers)
 - [Heroku Deployment](https://www.heroku.com/)
 
