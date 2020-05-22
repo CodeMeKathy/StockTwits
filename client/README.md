@@ -35,13 +35,9 @@ This project uses [NodeJS](http://nodejs.org) and [NPM](https://npmjs.com). To c
 
 ### Dev Dependencies
 
-<!--?? TODO - Remove if not used for .env file -->
-<!--?? TOOD - Add to dev dependencies  -->
-
-- [dotenv](https://www.npmjs.com/package/dotenv)
 - [express](https://www.npmjs.com/package/express)
 - [nodemon](https://www.npmjs.com/package/nodemon)
-- [fortawesome/fontawesome-svg-core](https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core)
+- [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)
 
 ### 💾 Installation
 
