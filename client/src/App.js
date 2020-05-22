@@ -39,7 +39,7 @@ const App = () => {
 
   const handleDelete = event => {
     event.preventDefault()
-    // if
+    // TODO
   }
 
   return (
