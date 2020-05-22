@@ -36,6 +36,7 @@ div.col-sm-2 {
 @media (max-width: 414px) {
   .symbol-div {
     width: 18rem;
+    flex-direction: row;
   }
   div.col-sm-10 {
     padding-top: 0rem;

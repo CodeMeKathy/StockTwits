@@ -31,7 +31,7 @@ const SymbolContainer = ({
               className='form-control'
               placeholder='GOOG, AAPL, SPOT'
               value={query}
-              onChange={event => setQuery(event.target.value)} // Store user input in state (via query)
+              onChange={event => setQuery(event.target.value)} // Store user input in state
             />
             <button type='submit' className='btn'>
               Get Tweet
@@ -42,7 +42,6 @@ const SymbolContainer = ({
       <Row className='symList-row'>
         {symbolList.length > 0
           ? symbolList.map(symbol => {
-              console.log('symbol from SymbolContainer', symbol)
               return (
                 <Symbol
                   key={symbol.id}
