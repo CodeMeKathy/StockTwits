@@ -8,7 +8,7 @@
 }
 
 .App {
-  height: 150vh;
+  height: 100vh;
   /* width: 100%; */
   background-image: url('./assets/images/MainBackground.png');
   background-size: cover;
@@ -18,6 +18,9 @@
 
 /* Mobile Phones */
 @media (max-width: 414px) {
+  .App {
+    height: 115vh;
+  }
   .main {
     flex-direction: column;
   }

@@ -1,3 +1,6 @@
+.main {
+  margin-top: 5rem;
+}
 input.form-control {
   text-align: center;
 }
@@ -14,4 +17,21 @@ button.btn:hover {
 .empty-title,
 .empty-sub {
   font-family: 'Balsamiq Sans', cursive;
+}
+.tweets-ul {
+  overflow-y: scroll;
+  height: 50rem;
+}
+
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .tweets-ul {
+    overflow-y: scroll;
+    height: 30rem;
+  }
+  .main {
+    margin-top: 1.5rem;
+  }
 }

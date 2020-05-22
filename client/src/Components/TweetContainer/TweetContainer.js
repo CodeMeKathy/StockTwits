@@ -21,7 +21,7 @@ const TweetContainer = ({ symbol }) => {
                 <h3 className='tweet-div-title'>
                   {symbol.messages.length} '{symbol.symbol.title}' Tweets
                 </h3>
-                <ul>
+                <ul className='tweets-ul'>
                   {symbol.messages.map(message => {
                     return (
                       <Tweet

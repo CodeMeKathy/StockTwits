@@ -51,7 +51,7 @@ const App = () => {
           <NavbarCustom />
         </Col>
       </Row>
-      <Row className='main' style={{ marginTop: '5rem' }}>
+      <Row className='main'>
         <Col className='symbols-container' sm={4}>
           <SymbolContainer
             symbol={symbol}

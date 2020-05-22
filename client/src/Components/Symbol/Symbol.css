@@ -30,3 +30,24 @@ div.col-sm-2 {
   color: #077dfc;
   font-family: 'Balsamiq Sans', cursive;
 }
+/*! Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .symbol-div {
+    width: 18rem;
+  }
+  div.col-sm-10 {
+    padding-top: 0rem;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  div.col-sm-2 {
+    padding-left: 0;
+    padding-right: 0rem;
+  }
+  .delete-x {
+    color: #077dfc;
+    font-family: 'Balsamiq Sans', cursive;
+  }
+}
