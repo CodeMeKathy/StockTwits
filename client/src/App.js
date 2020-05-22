@@ -27,15 +27,22 @@ const App = () => {
         ticker.toUpperCase() === tickerSym.symbol.symbol.toUpperCase()
     ) // Force same casing scheme for comparison
     setSymbol(matchingSymbol)
-    setSymbolList(matchingSymbol)
+    setSymbolList(symbolList => [...symbolList, matchingSymbol])
   }
 
-  // Handle user input on submit to fetch the symbol from the API
+  // Handle user input on submit to fetch the symbol from the API (currently match symbol from dummy 'API')
   const handleSubmit = event => {
     event.preventDefault()
     findBySymbol(query)
+    // setSymbolList(symbolList => [...symbolList, query.toUpperCase()])
     setQuery('')
   }
+
+  // Source: https://www.robinwieruch.de/local-storage-react
+  useEffect(() => {
+    localStorage.setItem('symbolList', symbolList)
+  }, [symbolList])
+
 
   return (
     <Container fluid className='App'>

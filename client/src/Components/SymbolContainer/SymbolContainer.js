@@ -7,14 +7,7 @@ import Row from 'react-bootstrap/Row'
 // Imported Components
 import Symbol from '../Symbol/Symbol'
 
-const SymbolContainer = ({
-  symbol,
-  symbolList,
-  setSymbolList,
-  handleSubmit,
-  query,
-  setQuery
-}) => {
+const SymbolContainer = ({ symbolList, handleSubmit, query, setQuery }) => {
   return (
     <div>
       <Row className='sym-row'>
@@ -27,7 +20,7 @@ const SymbolContainer = ({
               className='form-control'
               placeholder='GOOG, AAPL, SPOT'
               value={query}
-              onChange={event => setQuery(event.target.value)} // Store user input in state (via query)
+              onChange={event => setQuery(event.target.value)} // Store user input in state
             />
             <button type='submit' className='btn'>
               Get Tweet
@@ -36,13 +29,12 @@ const SymbolContainer = ({
         </div>
       </Row>
       <Row className='symList-row'>
-        <Symbol
-          symbol={symbol}
-          key={symbol.id}
-          id={symbol.id}
-          symbolList={symbolList}
-          setSymbolList={setSymbolList}
-        />
+        {symbolList.length > 0
+          ? symbolList.map(symbol => {
+              console.log('symbol from SymbolContainer', symbol)
+              return <Symbol key={symbol.id} symbol={symbol} />
+            })
+          : null}
       </Row>
     </div>
   )

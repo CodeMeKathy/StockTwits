@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row'
 
 const Symbol = ({ symbol }) => (
   <Col className='symList-container'>
+    {/* {console.log('symbol from Symbol', symbol)} */}
     {typeof symbol === 'object' && Object.keys(symbol).length > 0 ? (
       <div className='symbol-div'>
         <Row>
