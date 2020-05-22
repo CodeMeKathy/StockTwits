@@ -11,39 +11,32 @@ import NavbarCustom from './Components/Navbar/Navbar'
 import TweetContainer from './Components/TweetContainer/TweetContainer'
 import SymbolContainer from './Components/SymbolContainer/SymbolContainer'
 
-// Bring in data from sample-data.json
-// Source: https://stackoverflow.com/a/52349546/3609037
-const db = require('../../client/src/sample-data.json')
-
 const App = () => {
   const [query, setQuery] = useState('')
   const [symbol, setSymbol] = useState({})
   const [symbolList, setSymbolList] = useState([])
+  const [url, setUrl] = useState('')
 
-  // Find ticker symbol object in DB that matches user input (via query variable)
-  const findBySymbol = ticker => {
-    const matchingSymbol = db.find(
-      tickerSym =>
-        ticker.toUpperCase() === tickerSym.symbol.symbol.toUpperCase()
-    ) // Force same casing scheme for comparison
-    setSymbol(matchingSymbol)
-    setSymbolList(symbolList => [...symbolList, matchingSymbol])
-  }
+  // Handle user input on submit to fetch the symbol from the API
+  useEffect(() => {
+    const fetchData = () => {
+      fetch(url)
+        .then(res => res.json())
+        .then(json => setSymbol(json))
+        .then(setSymbolList(symbolList => [...symbolList, symbol]))
+        .catch(err => console.error(err))
+    }
+    fetchData()
+  }, [url])
 
-  // Handle user input on submit to fetch the symbol from the API (currently match symbol from dummy 'API')
+  // Handle user input on submit to fetch the symbol from the API
   const handleSubmit = event => {
     event.preventDefault()
-    findBySymbol(query)
-    // setSymbolList(symbolList => [...symbolList, query.toUpperCase()])
-    setQuery('')
+    if (query !== undefined && query.trim().length > 0) {
+      setUrl(`http://kl-test-server.herokuapp.com/?q=${query}`)
+      setQuery('')
+    }
   }
-
-  // Source: https://www.robinwieruch.de/local-storage-react
-  useEffect(() => {
-    localStorage.setItem('symbolList', symbolList)
-  }, [symbolList])
-
-
   return (
     <Container fluid className='App'>
       <Row>
@@ -59,7 +52,6 @@ const App = () => {
             setQuery={setQuery}
             symbolList={symbolList}
             setSymbolList={setSymbolList}
-            findBySymbol={findBySymbol}
             handleSubmit={handleSubmit}
           />
         </Col>
